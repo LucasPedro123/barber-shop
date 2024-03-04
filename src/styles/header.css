@@ -1,0 +1,93 @@
+
+/* HEADER  */
+
+header{
+    width: 100%;
+  }
+
+  header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('/src/Imgs/main-barbearia.svg');
+    width: 99.8%;
+    z-index: -1;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  i {
+    color: var(--white-main);
+    transition: transform 0.8s ease; /* Adicionando a transição para o efeito de saída */
+  }
+  .header-icons, .header-btn{
+    margin: 42px 36px;
+    
+  } 
+  .header-icons{
+    display: flex;
+    gap: 14.9px;
+  }
+  
+  .header-icons a:hover{
+    i{
+      color: var(--AuxiliaryColors3);
+      transform: translateY(-8px) scale(1.2);
+    }
+  }
+  
+  .header-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-btn a{
+    color: var(--white-main);
+  }
+  
+  .header-btn{
+    border: 1px solid var(--white-main);
+    padding: 9px 19px;
+    height: 100%;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .header-btn:hover{
+    border: 1px solid var(--AuxiliaryColors3);
+    background-color: var(--AuxiliaryColors3);
+  }
+  
+  .header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo{
+        width: 160px;
+    }
+    .header-icons{
+        margin-top: 46px;
+    }
+    .header-icons a{
+        i{
+            width: 32px;
+        }
+    }
+    .header-btn{
+        display: none;
+    }
+
+    
+  }

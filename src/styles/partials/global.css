@@ -1,0 +1,22 @@
+  :root{
+      --primary-main: #06121E;
+      --primary-dark: #040f1a;
+      --primary-light: #0c2135;
+    
+      --secondary-main: #090d11;
+      --secondary-dark: #06090c;
+      --secondary-light: #1a1f25;
+    
+      --black-main: #232224;
+      --black-dark: #161617;
+      --black-light: #353436;
+    
+      --white-main: #FFF;
+      --white-dark: #edeaef;
+      --white-light: #fefbff;
+    
+      --AuxiliaryColors1: #D94140;
+      --AuxiliaryColors2: #b42b2b;
+      --AuxiliaryColors3: #d34040;
+  }
+  
