@@ -1,0 +1,52 @@
+footer{
+    width: 100%;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+.footer-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo{
+    width: 166px;
+}
+
+.footer-title{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    margin-top: 39px;
+    margin-bottom: 28px;
+    color: var(--white-main);
+
+    
+}
+
+.footer-whatsapp{
+    width: 98.8vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: fixed;
+}
+
+.whatsapp-icon{
+    width: 73px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .footer-title{
+        font-size: 10px;
+
+    }
+}
