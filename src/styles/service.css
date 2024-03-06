@@ -16,7 +16,6 @@
 }
 .services-subtitle{
     font-size: 18px;
-    font-family: 'Inter';
     font-weight: 500;
     line-height: 150%;
     text-align: center;
@@ -34,19 +33,47 @@
 
 .services-catalog{
     margin: 0px 24px;
-    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(4px 6px 14px rgba(0, 0, 0, 0.45));
     background-color: var(--white-dark);
     border-radius: 10px;
 }
+.service-catalog-texts{
+    padding: 24px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service-price{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    text-align: center;
+
+    color: var(--white-main);
+    border-radius: 8px;
 
 
+    padding: 12px 19px;
+    background-color: var(--AuxiliaryColors1);
+}
 .service-location-title{
     margin-top: 146px;
     padding-bottom: 48px;
     text-align: center;
     font-size: 34px;
 }
+.service-content-image{
+    transition: transform 0.8s ease;
+}
 
+.service-content-image img:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(159, 7, 7, 0.959);
+    filter: brightness(110%);
+
+}
 @media screen and (max-width: 768px){
     .services-title{
         font-size: 44px;

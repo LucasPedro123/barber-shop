@@ -3,6 +3,8 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .about-images{
@@ -10,8 +12,8 @@
 }
 
 .about-texts{
-    margin-left: 165px;
     font-family: 'Inter';
+    margin-left: 165px;
 }
 
 .about-title{
@@ -29,7 +31,6 @@
 
 .about-subtitle{
     padding-top: 21px;
-    font-size: 1em;
     color: var(--white-main);
 }
 
@@ -39,21 +40,22 @@
     }
 
     .about-texts{
-        margin-left: 82.5px;
+        margin: 0px 72px;
     }
 }
 
 @media screen and (max-width: 768px){
 
     .about-texts{
-        margin: 0px 30px;
+        font-size: 9px;
         margin-top: 10%;
+        margin: 12px;
     }
     .about-title{
         font-size: 44px;
     }
     .about-subtitle{
-        font-size: 13px;
+        font-size: 10px;
         
     }
 
