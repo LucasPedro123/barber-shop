@@ -30,18 +30,36 @@ footer{
     
 }
 
-.footer-whatsapp{
-    width: 98.8vw;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    position: fixed;
-}
+
 
 .whatsapp-icon{
-    width: 73px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    img{
+        max-width: 73px;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+    span{
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+}
+.whatsapp-icon:hover span{
+    width: 100px;
+    text-align: center;
+    background-color: var(--black-main);
+    color: var(--white-main);
+    visibility: visible;
+    opacity: 1;
+    left: -100px;
 }
 
 @media screen and (max-width: 768px){
