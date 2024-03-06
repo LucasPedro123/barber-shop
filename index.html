@@ -6,6 +6,9 @@
         <title>Barber Shop</title>
         <link rel="icon" href="src/Imgs/logo.svg">
         
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <link rel="stylesheet" href="src/styles/partials/global.css">
         <link rel="stylesheet" href="src/styles/header.css">
         <link rel="stylesheet" href="src/styles/about.css">
@@ -25,8 +28,8 @@
 <body>
     <div class="bg-home">
         <header>
-            <nav class="header-content">
-                <div class="header-icons">
+            <nav class="header-content" >
+                <div class="header-icons" data-aos="fade-down">
                     <a href="">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -37,10 +40,10 @@
                         <i class="fa-brands fa-twitter fa-2x"></i>
                     </a>
                 </div>
-                <div class="header-logo">
+                <div class="header-logo" data-aos="flip-up" data-aos-delay="900">
                     <img src="src/Imgs/logo.svg" alt="">
                 </div>
-                <div class="header-btn">
+                <div class="header-btn" data-aos="fade-down">
                     <a href="#">
                         Agendar horário
                     </a>
@@ -48,7 +51,7 @@
             </nav>
         </header>
     </div>
-    <main class="main">
+    <main class="main" data-aos="zoom-in-up" data-aos-delay="500">
         <h1 class="main-title">ESTILO É UM REFLEXO DA SUA</h1>
         <h1 class="main-title">ATITUDE E SUA PERSONALIDADE.</h1>
         <p class="main-subtitle">Horário de funcionamento: 09:00 ás 19:00s</p>
@@ -60,9 +63,9 @@
         </div>
     </main>
     <section class="about">
-        <img class="about-images" src="src/Imgs/about-barber-img-demonstration.svg" alt="">
+        <img data-aos="zoom-in" data-aos-delay="300" class="about-images" src="src/Imgs/about-barber-img-demonstration.svg" alt="">
         
-        <div class="about-texts">
+        <div class="about-texts" data-aos="zoom-in" data-aos-delay="500">
             <h1 class="about-title">Sobre</h1>
             <p class="about-subtitle">
                 Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. 
@@ -84,7 +87,7 @@
             </p>
         </div>
         <div class="services-content">
-            <article class="services-catalog">
+            <article class="services-catalog" data-aos="zoom-in-down" data-aos-delay="300">
                 <div class="service-content-image">
                     <img class="service-image" src="src/Imgs/service-barber1.svg" alt="">
                 </div>
@@ -93,7 +96,7 @@
                     <p class="service-price">R$ 70,00</p>
                 </div>
             </article>
-            <article class="services-catalog">
+            <article class="services-catalog" data-aos="zoom-in-down" data-aos-delay="500">
                 <div class="service-content-image">
                     <img class="service-image" src="src/Imgs/service-barber2.svg" alt="">
                 </div>
@@ -102,7 +105,7 @@
                     <p class="service-price">R$ 70,00</p>
                 </div>
             </article>
-            <article class="services-catalog">
+            <article class="services-catalog" data-aos="zoom-in-down" data-aos-delay="700">
                 <div class="service-content-image">
                     <img class="service-image" src="src/Imgs/service-barber3.svg" alt="">
                 </div>
@@ -117,7 +120,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.1820995285466!2d-54.58795!3d-20.4577126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8954ac0b10d%3A0x7149aba0cb5688b8!2sShopping%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1709666736191!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="footer-texts">
             <div class="footer-icons">
                 <div class="header-icons">
@@ -137,9 +140,18 @@
                 <p class="footer-title">Copyright© 2023 | Dev Barbearia  - Todos os direitos reservados.</p>
             </div>
         </div>
-        <div class="footer-whatsapp">
-            <img class="whatsapp-icon" src="src/Imgs/Icons/icon-whatssapp.svg" alt="">
-        </div>
     </footer>
+    <a 
+        class="whatsapp-icon"
+        href="https://api.whatsapp.com/send?phone=11976589382&text=Ol%C3%A1,%20Lucas!%20Eu%20vim%20atrav%C3%A9s%20da%20sua%20landingpage%20barber-shop!"
+        target="_blank"
+        data-aos="zoom-in-up" data-aos-delay="300"
+    >
+        <img  src="src/Imgs/Icons/icon-whatssapp.svg" alt="">
+        <span class="test">Agende o seu horário</span>
+    </a>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
