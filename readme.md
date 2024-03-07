@@ -23,7 +23,7 @@ A Barber Shop é um site projetado para promover serviços de barbearia, oferece
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio
+    git clone https://github.com/LucasPedro123/barber-shop
     ```
 
 2. Após clonar o projeto, abra o arquivo `index.html` no seu navegador.
